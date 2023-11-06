@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Comprar Tickets / Paseos Velero CABA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+
+<body>
+
+    <!-- Inicio Header -->
+    <header style="background: rgb(0, 0, 0) ; color:rgb(255, 255, 255)">
+        
+        <div>
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+              <a class="navbar-brand" href="index.html"> <img src="./images/codoacodo-min.png" width="100px" height="80px" alt="logo codo a codo" title="logo codo a codo"> </a>
+
+              <h1 class="h3 "><b>PASEOS EN VELERO CABA</b></h1>
+
+              <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mi-menu">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="mi-menu" >
+
+                <ul class="navbar-nav mx-auto" >
+                  <li class="nav-item">
+                    <a class="nav-link h5" href="index.html" style="color:aliceblue">Inicio</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link h5" href="index.html" style="color:aliceblue">Capitanes</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link h5" href="index.html" style="color:aliceblue">Horarios</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link h5" href="index.html" style="color:aliceblue">Reservas</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link h5" href="#" style="color:rgb(41, 184, 108)">Comprar Tickets</a>
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+          </nav>
+        </div>
+    </header>
+    <!-- Fin Header -->
+
+
+    <!-- Inicio Descuentos -->
+    <section>
+        <div class="container">
+            <div class="container text-center" style="background-color: rgb(255, 255, 255)">
+                <p class="mb-0 mt-4 h6"><small>Conoce nuestros</small></p>
+                <p class="mb-0 h3"><strong>DESCUENTOS</strong></p>
+            </br>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg text-center mb-2">
+                    <div class="card border-primary rounded-4 border-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Estudiante</h5>
+                            <p class="card-text">Tienen un descuento de: </p>
+                            <p class="card-text"> <strong>80%</strong> </p>
+                            <p class="card-text"> <small> (presentar la documentacion correspondiente)</small> </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg text-center mb-2">
+                    <div class="card border-warning rounded-4 border-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Trainee</h5>
+                            <p class="card-text">Tienen un descuento de: </p>
+                            <p class="card-text"> <strong>50%</strong> </p>
+                            <p class="card-text"> <small> (presentar la documentacion correspondiente)</small> </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg text-center mb-2">
+                    <div class="card border-success rounded-4 border-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Junior</h5>
+                            <p class="card-text">Tienen un descuento de: </p>
+                            <p class="card-text"> <strong>15%</strong> </p>
+                            <p class="card-text"> <small> (presentar la documentacion correspondiente)</small> </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        
+        </div>
+
+    </section>
+    <!-- Fin Descuentos -->
+
+
+    <!-- Formulario Pago-->
+    <section id="comprar-tickets">
+        
+      <div>
+        <div class="container text-center" style="background-color: rgb(255, 255, 255)">
+            <p class="mb-0 mt-4 h6"><small>Compra ya tu</small></p>
+            <p class="mb-0 h2"><strong>TICKET</strong></p>
+            <p class="mb-0 h2"><strong>$3000</strong></p>
+            <p class="mb-0"><small>Completa tus datos, paga tu reserva y te llegará un email con tus tickets.</small></p>
+            <p><small>¡Anda preparándote para esta GRAN AVENTURA!</small></p>
+
+            <form action="..." method="post">
+                <div class="m-3 row g-3">
+
+                  <div class="col">
+                    <input class="form-control  " type="text" name="nombre" placeholder="Nombre">
+                  </div>
+
+                  <div class="col">
+                    <input class="form-control  " type="text" name="apellido" placeholder="Apellido">
+                  </div>
+
+                </div>
+
+                <div class="m-3 px-2 pb-3">
+                  <input class="form-control " type="mail" name="email" placeholder="Email">
+                </div>
+
+                
+                <!-- INICIO PARTE CON JS-->
+
+                <div class="row gx-3 m-3">
+                  <div class="col-md mb-3">
+                      <label for="cantidadTickets" class="form-label">Cantidad</label>
+                      <input type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad" id="cantidadTickets" min="1" required>
+                  </div>
+                  <div class="col-md mb-3">
+                      <label for="categoriaSelect" class="form-label">Categoría</label>
+                      <select class="form-select" aria-label="Categoría" id="categoriaSelect">
+                          <option value="" selected>-- Seleccione --</option>
+                          <option value="0">Sin Categoria</option>
+                          <option value="1">Estudiante</option>
+                          <option value="2">Trainee</option>
+                          <option value="3">Junior</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="alert alert-success mt-2 mb-4" role="alert">
+                  Total a pagar: $ <span id="totalPago" class="align-middle"></span>
+              </div>
+              <div class="row gx-2">
+                  <div class="col-md mb-3">
+                      <button type="reset" class="w-100 btn btn-lg btn-form btn-success" id="btnBorrar">Borrar</button>
+                  </div>
+                  <div class="col-md mb-3">
+                      <button type="button" class="w-100 btn btn-lg btn-form btn-success" id="btnResumen">Resumen</button>
+                  </div>
+              </div>
+              <!-- FIN PARTE CON JS-->
+
+            </form>
+        </div> 
+      </div>
+    </section>
+    <!-- Fin Formulario Pago -->
+
+
+    <!-- Inicio Footer -->
+    <footer>
+      <div style="background-color: rgb(14, 80, 147); color: white;">
+        <div class="container m-auto py-3">
+          <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a style="color:aliceblue" class="nav-link" href="#">Preguntas frecuentes</a>
+                </li>
+
+                <li class="nav-item">
+                  <a style="color:aliceblue" class="nav-link" href="#">Términos y condiciones</a>
+                </li>
+
+                <li class="nav-item">
+                  <a style="color:aliceblue" class="nav-link" href="#">Privacidad</a>
+                </li>
+
+                <li class="nav-item">
+                  <a style="color:aliceblue" class="nav-link" href="#">Eventos (empresas)</a>
+                </li>
+
+                <li class="nav-item">
+                  <a style="color:aliceblue" class="nav-link" href="#">Nuestra Historia</a>
+                </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- Fin Footer -->
+  
+    <script src="js/javascript.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body> 
+
+</html>
